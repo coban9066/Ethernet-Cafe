@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    background: linear-gradient(135deg,  #141d5e, #04a288,#6b148e);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+header {
+    position: relative;
+    width: 100vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    top: 2vw;
+    background-color: rgba(0, 0, 0, 0.121);
+    
+    align-items: center;
+}
+header img {
+    width: 15vw;
+    height: 15vw;
+
+}
+.gallery {
+    position: relative;
+    width: 40vw;
+    height: 30vw;
+    top: 5vw;
+    left: 2vw;
+    text-align: center;
+    
+}
+.gallery img {
+    width: 40vw;
+    height: 30vw;
+    border-radius: 2vw;
+    border: 1px solid white;
+}
+.gallery h1 {
+    color: white;
+    font-size: 2vw;
+    animation: fadeText 4s infinite;
+    
+}
+
+@keyframes fadeText {
+    0% { opacity: 0; transform: translateY(10px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-10px); }
+}
+nav ul li ,nav ul li a,nav ul {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    display: flex;
+    gap: 2vw;
+    transition: 1s ease
+    ;
+}
+nav {
+    position: relative;
+    display: flex;
+    justify-content:end;
+    bottom: 31vw;
+    right: 0.5vw;
+}
+nav ul li a:hover{
+    margin-right: 1vw;
+    color: rgb(15, 206, 223);
+    transform: scale(1.2);
+}
+.info-section {
+    position: absolute;
+    cursor: pointer;
+    transition: 3s ease-in-out;
+  
+    top: 8vw; /* gallery ile hizalanması için */
+    left: 42vw; /* gallery'nin sağında kalacak şekilde */
+    width: 40vw;
+    height: 27vw;
+    color: white;
+    padding: 2vw;
+}
+
+.info-section h2 {
+    font-size: 2.2vw;
+    margin-bottom: 1vw;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+
+}
+
+.info-section p {
+    font-size: 1.4vw;
+    line-height: 2.2vw;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+
+}
+
+@keyframes logoEntry {
+    0% {
+      opacity: 0;
+      transform: scale(0.7) rotate(-10deg);
+      filter: brightness(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.2) rotate(0deg);
+      filter: brightness(1);
+    }
+  }
+  
+  @keyframes pulseEffect {
+    0%, 100% {
+      transform: scale(1);
+      filter: brightness(1);
+    }
+    50% {
+      transform: scale(1.1);
+      filter: brightness(1.1);
+    }
+  }
+  
+  .logo-anim {
+    width: 200px; 
+    animation: logoEntry 1.2s ease-out forwards, pulseEffect 4s ease-in-out infinite;
+    transform-origin: center;
+  }
+  .logo-anim:hover {
+    transform: scale(1.6) rotate(2deg);
+    transition: 0.3s ease;
+  }
+  .hero {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    bottom: 30vw;
+  }
+  .hero img {
+    width: 20vw;
+    height: 40vw;
+  }
