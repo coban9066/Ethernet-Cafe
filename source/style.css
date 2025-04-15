@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Oswald", sans-serif;
-    background: linear-gradient(135deg,  #141d5e, #04a288,#6b148e);
+    background: linear-gradient(135deg,  #ff9100, #000000,#646465);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     overflow-y: hidden;
@@ -34,7 +34,7 @@ header img {
     position: relative;
     width: 40vw;
     height: 30vw;
-    top: 5vw;
+    top: 2vw;
     left: 2vw;
     text-align: center;
     
@@ -71,7 +71,7 @@ nav {
     position: relative;
     display: flex;
     justify-content:end;
-    bottom: 31vw;
+    bottom: 1vw;
     right: 0.5vw;
 }
 nav ul li a:hover{
@@ -156,6 +156,7 @@ nav ul li a:hover{
     z-index: 1;
   }
 .gallery a {
+  text-decoration: none;
   color: white;
   font-size: 1.2vw;
   z-index: 1000;
